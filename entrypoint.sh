@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+cp -r ${DATA_DIR} /binddata
+DATA_DIR=/binddata
 ROOT_PASSWORD=${ROOT_PASSWORD:-password}
 BIND_DATA_DIR=${DATA_DIR}/bind
 
